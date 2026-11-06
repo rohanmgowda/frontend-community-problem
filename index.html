@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Community Problem Reporting and Resolution Platform</title><link rel="icon" href="images/logo.svg">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet"></head>
+<body>
+<nav class="navbar navbar-expand-lg pub-nav"><div class="container">
+  <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" style="color:var(--navy)" href="#home"><img src="images/logo.svg" width="38" alt="">Community Problem Platform</a>
+  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nv"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="nv">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li><li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+      <li class="nav-item"><a class="nav-link" href="#how">How It Works</a></li><li class="nav-item"><a class="nav-link" href="#features">Features</a></li></ul>
+    <div class="d-flex gap-2 flex-wrap">
+      <a href="login.html" class="btn btn-outline-navy">Login</a><a href="register.html" class="btn btn-navy">Sign Up</a>
+      <a href="report.html" class="btn btn-green"><i class="bi bi-megaphone me-1"></i>Report a Problem</a></div>
+  </div></div></nav>
+
+<header class="hero" id="home"><div class="container"><div class="row align-items-center g-4"><div class="col-lg-7">
+  <span class="badge rounded-pill text-bg-success mb-3 px-3 py-2">Civic Innovation &amp; Software Development &middot; PS-14</span>
+  <h1>Report it. Track it. See it fixed.</h1>
+  <p class="mt-3">A transparent platform where residents report broken streetlights, damaged roads and overflowing bins &mdash; and administrators review, prioritise and resolve them with a visible, recorded trail.</p>
+  <div class="d-flex gap-2 flex-wrap mt-4"><a href="report.html" class="btn btn-green btn-lg"><i class="bi bi-megaphone me-1"></i>Report a Problem</a><a href="#how" class="btn btn-outline-light btn-lg">How it works</a></div>
+</div><div class="col-lg-5 d-none d-lg-block text-center"><i class="bi bi-buildings" style="font-size:12rem;opacity:.2"></i></div></div></div></header>
+
+<div class="container hero-stats"><div class="row g-3">
+  <div class="col-md-4"><div class="card-x"><h2 id="stRep">–</h2><div class="muted">Complaints reported</div></div></div>
+  <div class="col-md-4"><div class="card-x"><h2 id="stRes" style="color:var(--green-d)">–</h2><div class="muted">Resolved</div></div></div>
+  <div class="col-md-4"><div class="card-x"><h2 id="stPen" style="color:#b45309">–</h2><div class="muted">Pending</div></div></div></div></div>
+
+<section class="sec" id="about"><div class="container"><div class="row g-4 align-items-center"><div class="col-lg-6">
+  <h2 class="t">About Us</h2>
+  <p class="muted fs-5">Local issues often go unreported or untracked. We built a single place where citizens describe problems with text, photos and an optional location, and where officials verify, assign and update each case.</p>
+  <p class="muted">Reports are not treated as verified facts until reviewed, and a complaint is never shown as resolved without a recorded update.</p></div>
+  <div class="col-lg-6"><div class="row g-3">
+    <div class="col-6"><div class="card-x text-center"><i class="bi bi-eye fs-1 text-success"></i><div class="fw-bold">Transparent</div></div></div>
+    <div class="col-6"><div class="card-x text-center"><i class="bi bi-shield-lock fs-1" style="color:var(--navy)"></i><div class="fw-bold">Private &amp; secure</div></div></div>
+    <div class="col-6"><div class="card-x text-center"><i class="bi bi-cpu fs-1" style="color:var(--navy)"></i><div class="fw-bold">ML-assisted</div></div></div>
+    <div class="col-6"><div class="card-x text-center"><i class="bi bi-graph-up-arrow fs-1 text-success"></i><div class="fw-bold">Measurable</div></div></div></div></div></div></div></section>
+
+<section class="sec" style="background:#fff" id="how"><div class="container text-center"><h2 class="t mb-5">How It Works</h2><div class="row g-4">
+  <div class="col-md-3"><div class="how-n">1</div><h5 class="fw-bold">Sign up</h5><p class="muted">Create a free citizen account.</p></div>
+  <div class="col-md-3"><div class="how-n">2</div><h5 class="fw-bold">Report</h5><p class="muted">Describe the problem and add a photo. The category is suggested automatically.</p></div>
+  <div class="col-md-3"><div class="how-n">3</div><h5 class="fw-bold">Review &amp; assign</h5><p class="muted">Administrators verify it and assign the right department.</p></div>
+  <div class="col-md-3"><div class="how-n">4</div><h5 class="fw-bold">Track to resolution</h5><p class="muted">Follow every status change and see the resolution photo.</p></div></div></div></section>
+
+<section class="sec" id="features"><div class="container"><h2 class="t text-center mb-5">Features</h2><div class="row g-4">
+  <div class="col-md-4"><div class="card-x feat"><div class="ico ic-green"><i class="bi bi-stars"></i></div><h5 class="fw-bold">Smart categorisation</h5><p class="muted mb-0">A locally trained TF-IDF model predicts the category and shows its confidence.</p></div></div>
+  <div class="col-md-4"><div class="card-x feat"><div class="ico ic-navy"><i class="bi bi-diagram-3"></i></div><h5 class="fw-bold">Visual tracking</h5><p class="muted mb-0">A progress timeline from Submitted to Resolved with administrator remarks.</p></div></div>
+  <div class="col-md-4"><div class="card-x feat"><div class="ico ic-amber"><i class="bi bi-files"></i></div><h5 class="fw-bold">Duplicate detection</h5><p class="muted mb-0">Cosine similarity flags repeated reports so teams don't double-handle.</p></div></div>
+  <div class="col-md-4"><div class="card-x feat"><div class="ico ic-blue"><i class="bi bi-bar-chart-line"></i></div><h5 class="fw-bold">Live analytics</h5><p class="muted mb-0">Category, status, monthly and area-wise charts from real records.</p></div></div>
+  <div class="col-md-4"><div class="card-x feat"><div class="ico ic-purple"><i class="bi bi-people"></i></div><h5 class="fw-bold">Department workflow</h5><p class="muted mb-0">Assign to Road Maintenance, Sanitation, Electrical, Water Supply and more.</p></div></div>
+  <div class="col-md-4"><div class="card-x feat"><div class="ico ic-red"><i class="bi bi-bell"></i></div><h5 class="fw-bold">Notifications</h5><p class="muted mb-0">Citizens are told when a complaint is verified, assigned, started or resolved.</p></div></div>
+</div></div></section>
+<footer class="pub text-center"><div class="container">&copy; Community Problem Reporting and Resolution Platform &middot; PS-14 &middot; Technovate 2.0</div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+fetch("/api/public/stats").then(r=>r.json()).then(s=>{document.getElementById("stRep").textContent=s.reported;document.getElementById("stRes").textContent=s.resolved;document.getElementById("stPen").textContent=s.pending;}).catch(()=>{});
+</script></body></html>
